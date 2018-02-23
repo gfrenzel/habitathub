@@ -1,3 +1,9 @@
+# Alexa Lambda Custom Skill
+
+This is the Habitat Hub Lambda function that executes in response to Alexa voice interactions.
+Deploy.cmd can be used in a Windows envirnoment with 7zip install to zip the neccessary files
+for AWS Lambda.
+
 # Alexa Habitat Hub Custom Skill
         User: Alexa, ask Habitat Hub to give me the hot spot temperature?
         Alexa: The hot spot temperature is 78 degrees Fahrenheit.
