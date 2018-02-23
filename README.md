@@ -1,4 +1,4 @@
-# habitathub
+# Habitat Hub
 Habitat Hub: An Alexa and Arduino Smart Home for terrariums.
 
 Need help keeping your pet healthy and safe, use this environmental monitoring unit that attaches to your reptile or amphibians terrarium.
