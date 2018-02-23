@@ -70,6 +70,16 @@
         "slots": []
       },
       {
+        "name": "getStatus",
+        "samples": [
+          "the status",
+          "for the status",
+          "what the status is",
+          "give me the status"
+        ],
+        "slots": []
+      },
+      {
         "name": "getTemperature",
         "samples": [
           "give me the {tempType}",
