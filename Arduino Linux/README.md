@@ -14,20 +14,22 @@ certs - Folder where certificates are stored.
 
 To run habhubgate.py on startup, you must install the coreutils-nohup package.
 
-Instructions:
+## Instructions:
+```
     opkg update
     opkg install coreutils-nohup
+```
 
 Add the following line to /etc/rc.local
-/---------- Add below Don't add this line --------------------/
+```
 /usr/bin/nohup /your/directory/name/habhubgate.py -e yourIOTendpoint.iot.us-east-1.amazonaws.com \
              -r /your/directory/name/certs/aws_iot_root_CA.crt \
              -c /your/directory/name/certs/your_thing-certificate.pem.crt \
              -k /your/directory/name/certs/your_thing-private.pem.key \
              -n habhub_1234 \
              -id yourClientID
-/---------- Add above. Don't add this line  --------------------/
+```
 
-NOTE: Some notes to help you have an easier time.
+**NOTE**: Some notes to help you have an easier time.
 1. yourIOTendpoint can be found on the IOT AWS service page under Settings -> Custom Endpoint.
 2. yourClientID can be anything but it has to be unique.
