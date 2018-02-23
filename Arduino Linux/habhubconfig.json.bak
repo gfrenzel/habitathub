@@ -1,0 +1,61 @@
+{
+  "lastwaterclean": "20180201",
+  "lastcageclean": "20180201",
+  "settings": [
+      {
+        "hubname": "htthi",
+        "name": "hottemphi",
+        "value": null
+      },
+      {
+        "hubname": "httlo",
+        "name": "hottemplo",
+        "value": null
+      },
+      {
+        "hubname": "cothi",
+        "name": "cooltemphi",
+        "value": null
+      },
+      {
+        "hubname": "cotlo",
+        "name": "cooltemplo",
+        "value": null
+      },
+      {
+        "hubname": "abthi",
+        "name": "ambtemphi",
+        "value": null
+      },
+      {
+        "hubname": "abtlo",
+        "name": "ambtemplo",
+        "value": null
+      },
+      {
+        "hubname": "humhi",
+        "name": "humidityhi",
+        "value": null
+      },
+      {
+        "hubname": "humlo",
+        "name": "humiditylo",
+        "value": null
+      },
+      {
+        "hubname": "wtrlv",
+        "name": "waterlevel",
+        "value": null
+      },
+      {
+        "hubname": "clnwd",
+        "name": "cleanwaterdays",
+        "value": null
+      },
+      {
+        "hubname": "clncd",
+        "name": "cleancagedays",
+        "value": null
+      }
+  ]
+}

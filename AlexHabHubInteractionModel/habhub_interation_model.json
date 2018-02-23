@@ -1,0 +1,134 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "tempSensor",
+        "values": [
+          {
+            "id": "",
+            "name": {
+              "value": "hot spot",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "cool spot",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "",
+            "name": {
+              "value": "ambient",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "getHumidity",
+        "samples": [
+          "give me the humidity",
+          "what is the humidity",
+          "what is humidity",
+          "for the humidity"
+        ],
+        "slots": []
+      },
+      {
+        "name": "getLastCleanCageDate",
+        "samples": [
+          "give me the last clean cage date",
+          "last time the cage was clean",
+          "the last clean cage date"
+        ],
+        "slots": []
+      },
+      {
+        "name": "getLastCleanWaterDate",
+        "samples": [
+          "last time water was clean",
+          "for the last clean water date",
+          "give me the last clean water date"
+        ],
+        "slots": []
+      },
+      {
+        "name": "getTemperature",
+        "samples": [
+          "give me the {tempType}",
+          "give me the {tempType} temp",
+          "give me the {tempType} temperature",
+          "what is the temp of {tempType}",
+          "what is the temperature of {tempType}",
+          "what is {tempType} temp",
+          "what is {tempType} temperature",
+          "the temperature of {tempType}",
+          "the temp of {tempType}",
+          "for the temperature of {tempType}",
+          "for the temp of {tempType}",
+          "what is the temperature",
+          "what's the temperature"
+        ],
+        "slots": [
+          {
+            "name": "tempType",
+            "type": "tempSensor",
+            "samples": [
+              "{tempType}",
+              "i would like {tempType}"
+            ]
+          }
+        ]
+      }
+    ],
+    "invocationName": "habitat hub"
+  },
+  "prompts": [
+    {
+      "id": "Elicit.Intent-getTemperature.IntentSlot-tempType",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "which temperature sensor are you wanting?"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "intents": [
+      {
+        "name": "getTemperature",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "tempType",
+            "type": "tempSensor",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-getTemperature.IntentSlot-tempType"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
