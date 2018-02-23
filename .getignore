@@ -1,7 +1,7 @@
 .gitignore
 
 # Dependency directories
-node_modules/
+node_modules
 
 # Any zip files
 *.zip
