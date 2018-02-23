@@ -16,3 +16,10 @@ For reptiles and amphibians it's important to regulate their environment to mimi
 4. Bowl water level
 5. Date of last cage cleaning
 6. Date of last water cleaning
+
+### What's Here
+1. **AlexaHabHubCustomSkill** - this is the AWS Lambda function for the Habitat Hub Alexa Custom Skill.
+2. **AlexaHabHubInteractionModel** - this is a json file with the InterationModel that will be copied into the Alexa developers interface.
+3. **Arduino ARV** - This code is for the Arduino Yun AVR side that monitors the sensors and sends the data to the middle ware application on the Linux side.
+4. **Arduino Linux** - This is the middle ware that stores configuration data from the ARV, receives sensor data and pushes it to the IoT Shadow.
+5. **README.md** - You're reading it now.
